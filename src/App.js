@@ -1,16 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+// import logo from './logo.svg';
+// import './App.css';
 
-function Header(){
-  let title = "Hello World";
+function Heading(){
   return(
-    <h1>{title}</h1>
+    <h1>This is an h1 heading</h1>
   );
 };
 
 function App() {
   return(
-    <Header />
+    <div className="App">
+      This is the starting code for "Your first component"
+      <Heading />
+    </div>
   )
 }
 
