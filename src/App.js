@@ -1,17 +1,15 @@
 // import logo from './logo.svg';
 // import './App.css';
-
-function Heading(){
-  return(
-    <h1 className="text-2xl">This is an h1 heading.</h1>
-  );
-};
+import Heading from './Heading';
+import Bag from './components/Bag';
+import Apples from './components/Apples';
+import Pears from './components/Pears';
 
 function App() {
   return(
     <div className="App">
-      This is the starting code for "Your first component"
-      <Heading />
+      <Bag children={<Apples color="Red" number="5" />}/>
+      <Bag children={<Pears friend="Peter" />} />
     </div>
   )
 }
