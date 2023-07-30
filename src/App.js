@@ -12,6 +12,7 @@ import Promo from './components/Promo';
 import Footer from './components/Footer';
 import Cards from './components/Cards';
 import Btn from './Event Components/Btn'
+import ModeToggle from './Event Components/ModeToggle';
 
 function App() {
   return(
@@ -37,8 +38,12 @@ function App() {
     //   <Cards h2="Third card's h2" h3="Third card's h3" />
     // </div>
 
+    // <div>
+    //   <Btn />
+    // </div>
+
     <div>
-      <Btn />
+      <ModeToggle />
     </div>
   )
 }
