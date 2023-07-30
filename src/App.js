@@ -13,6 +13,8 @@ import Footer from './components/Footer';
 import Cards from './components/Cards';
 import Btn from './Event Components/Btn'
 import ModeToggle from './Event Components/ModeToggle';
+import NumGuess from './Event Components/NumGuess';
+
 
 function App() {
   return(
@@ -42,8 +44,12 @@ function App() {
     //   <Btn />
     // </div>
 
+    // <div>
+    //   <ModeToggle />
+    // </div>
+
     <div>
-      <ModeToggle />
+      <NumGuess />
     </div>
   )
 }
