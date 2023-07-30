@@ -14,9 +14,12 @@ import Cards from './components/Cards';
 import Btn from './Event Components/Btn'
 import ModeToggle from './Event Components/ModeToggle';
 import NumGuess from './Event Components/NumGuess';
+import PrintTime from './components/PrintTime';
+
 
 
 function App() {
+  const date = new Date();
   return(
     // <div className="App">
     //   <Bag children={<Apples color="Red" number="5" />}/>
@@ -48,8 +51,12 @@ function App() {
     //   <ModeToggle />
     // </div>
 
+    // <div>
+    //   <NumGuess />
+    // </div>
+
     <div>
-      <NumGuess />
+      <PrintTime message={date.toLocaleTimeString()} />
     </div>
   )
 }
